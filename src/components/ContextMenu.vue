@@ -1,6 +1,6 @@
 <template>
-  <ul class="z-30 absolute text-base bg-neutral-50 dark:bg-gray-800 text-gray-700 dark:text-gray-200 border border-neutral-300 dark:border-gray-600 shadow rounded select-none" ref="contextmenu" v-if="context.active" :style="context.positions">
-    <li class="px-2 py-1.5 cursor-pointer hover:bg-neutral-200 dark:hover:bg-gray-700"
+  <ul class="z-30 absolute text-base dark:bg-gray-800 text-gray-700 dark:text-gray-200 py-2 rounded bg-white shadow-lg select-none" ref="contextmenu" v-if="context.active" :style="context.positions">
+    <li class="px-2 py-1.5 cursor-pointer bg-transparent hover:bg-gray-100 hover:text-indigo-500 dark:hover:bg-gray-700"
         v-for="(item) in context.items" :key="item.title" @click="run(item)">
       <span class="px-1"></span>
       <span>{{ item.title() }}</span>

@@ -57,7 +57,7 @@ const Ro = { class: "flex justify-between items-center py-1 text-sm" }, Vo = {
   class: "flex text-center"
 }, Bo = ["aria-label"], zo = /* @__PURE__ */ p("svg", {
   xmlns: "http://www.w3.org/2000/svg",
-  class: "h-10 w-10 m-auto cursor-pointer hover:stroke-indigo-200 hover:bg-indigo-200 p-2 rounded dark:stroke-gray-400 dark:hover:stroke-gray-300",
+  class: "h-10 w-10 m-auto cursor-pointer stroke-gray-500 hover:stroke-indigo-500 hover:bg-indigo-200 p-2 rounded dark:stroke-gray-400 dark:hover:stroke-gray-300",
   fill: "none",
   viewBox: "0 0 24 24",
   stroke: "none",
@@ -72,7 +72,7 @@ const Ro = { class: "flex justify-between items-center py-1 text-sm" }, Vo = {
   zo
 ], Uo = ["aria-label"], Ko = /* @__PURE__ */ p("svg", {
   xmlns: "http://www.w3.org/2000/svg",
-  class: "h-10 w-10 m-auto cursor-pointer hover:stroke-indigo-200 hover:bg-indigo-200 p-2 rounded dark:stroke-gray-400 dark:hover:stroke-gray-300",
+  class: "h-10 w-10 m-auto cursor-pointer stroke-gray-500 hover:stroke-indigo-500 hover:bg-indigo-200 p-2 rounded dark:stroke-gray-400 dark:hover:stroke-gray-300",
   fill: "none",
   viewBox: "0 0 24 24",
   stroke: "none",
@@ -99,7 +99,7 @@ const Ro = { class: "flex justify-between items-center py-1 text-sm" }, Vo = {
   qo
 ], Jo = ["aria-label"], Qo = /* @__PURE__ */ p("svg", {
   xmlns: "http://www.w3.org/2000/svg",
-  class: "h-10 w-10 m-auto cursor-pointer hover:stroke-indigo-200 hover:bg-indigo-200 p-2 rounded dark:stroke-gray-400 dark:hover:stroke-gray-300",
+  class: "h-10 w-10 m-auto cursor-pointer stroke-gray-500 hover:stroke-indigo-500 hover:bg-indigo-200 p-2 rounded dark:stroke-gray-400 dark:hover:stroke-gray-300",
   fill: "none",
   viewBox: "0 0 24 24",
   stroke: "none",
@@ -149,7 +149,7 @@ const Ro = { class: "flex justify-between items-center py-1 text-sm" }, Vo = {
   hi
 ], pi = { class: "flex text-center items-center justify-end" }, gi = ["aria-label"], mi = {
   xmlns: "http://www.w3.org/2000/svg",
-  class: "h-10 w-10 p-2 m-auto cursor-pointer stroke-gray-500 hover:stroke-cyan-700 dark:stroke-gray-400 dark:hover:stroke-gray-300",
+  class: "h-10 w-10 p-2 m-auto cursor-pointer stroke-gray-500 hover:stroke-indigo-500 hover:bg-indigo-200 rounded dark:stroke-gray-400 dark:hover:stroke-gray-300",
   fill: "none",
   viewBox: "0 0 24 24",
   stroke: "none",
@@ -223,7 +223,7 @@ const Ro = { class: "flex justify-between items-center py-1 text-sm" }, Vo = {
         }, [
           (w(), C("svg", {
             xmlns: "http://www.w3.org/2000/svg",
-            class: ct([u.value.length == 1 ? "cursor-pointer hover:stroke-indigo-200 hover:bg-indigo-200 rounded dark:stroke-gray-400 dark:hover:stroke-gray-300" : "stroke-gray-200  dark:stroke-gray-700", "h-10 w-10 m-auto p-2"]),
+            class: ct([u.value.length == 1 ? "cursor-pointer stroke-gray-500 hover:stroke-indigo-500 hover:bg-indigo-200 rounded dark:stroke-gray-400 dark:hover:stroke-gray-300" : "stroke-gray-200  dark:stroke-gray-700", "h-10 w-10 m-auto p-2"]),
             fill: "none",
             viewBox: "0 0 24 24",
             stroke: "none",
@@ -239,7 +239,7 @@ const Ro = { class: "flex justify-between items-center py-1 text-sm" }, Vo = {
         }, [
           (w(), C("svg", {
             xmlns: "http://www.w3.org/2000/svg",
-            class: ct([u.value.length ? "cursor-pointer hover:stroke-indigo-200 hover:bg-indigo-200 rounded dark:stroke-gray-400 dark:hover:stroke-gray-300" : "stroke-gray-200  dark:stroke-gray-700", "h-10 w-10 m-auto p-2"]),
+            class: ct([u.value.length ? "cursor-pointer stroke-gray-500 hover:stroke-indigo-500 hover:bg-indigo-200 rounded dark:stroke-gray-400 dark:hover:stroke-gray-300" : "stroke-gray-200  dark:stroke-gray-700", "h-10 w-10 m-auto p-2"]),
             fill: "none",
             viewBox: "0 0 24 24",
             stroke: "none",
@@ -263,7 +263,7 @@ const Ro = { class: "flex justify-between items-center py-1 text-sm" }, Vo = {
         }, [
           (w(), C("svg", {
             xmlns: "http://www.w3.org/2000/svg",
-            class: ct([u.value.length ? "cursor-pointer hover:stroke-indigo-200 hover:bg-indigo-200 rounded dark:stroke-gray-400 dark:hover:stroke-gray-300" : "stroke-gray-200  dark:stroke-gray-700", "h-10 w-10 m-auto p-2"]),
+            class: ct([u.value.length ? "cursor-pointer stroke-gray-500 hover:stroke-indigo-500 hover:bg-indigo-200 rounded dark:stroke-gray-400 dark:hover:stroke-gray-300" : "stroke-gray-200  dark:stroke-gray-700", "h-10 w-10 m-auto p-2"]),
             fill: "none",
             viewBox: "0 0 24 24",
             stroke: "none",
@@ -279,7 +279,7 @@ const Ro = { class: "flex justify-between items-center py-1 text-sm" }, Vo = {
         }, [
           (w(), C("svg", {
             xmlns: "http://www.w3.org/2000/svg",
-            class: ct([u.value.length ? "cursor-pointer hover:stroke-indigo-200 hover:bg-indigo-200 rounded dark:stroke-gray-400 dark:hover:stroke-gray-300" : "stroke-gray-200  dark:stroke-gray-700", "h-10 w-10 m-auto p-2"]),
+            class: ct([u.value.length ? "cursor-pointer stroke-gray-500 hover:stroke-indigo-500 hover:bg-indigo-200 rounded dark:stroke-gray-400 dark:hover:stroke-gray-300" : "stroke-gray-200  dark:stroke-gray-700", "h-10 w-10 m-auto p-2"]),
             fill: "none",
             viewBox: "0 0 24 24",
             stroke: "none",
@@ -308,7 +308,7 @@ const Ro = { class: "flex justify-between items-center py-1 text-sm" }, Vo = {
         }, [
           (w(), C("svg", {
             xmlns: "http://www.w3.org/2000/svg",
-            class: ct([l.value.length ? "stroke-gray-200  dark:stroke-gray-700" : "cursor-pointer stroke-gray-500 hover:stroke-cyan-700 dark:stroke-gray-400 dark:hover:stroke-gray-300", "h-10 w-10 p-2 m-auto"]),
+            class: ct([l.value.length ? "stroke-gray-200  dark:stroke-gray-700" : "cursor-pointer  stroke-gray-500 hover:stroke-indigo-500 hover:bg-indigo-200 rounded  dark:stroke-gray-400 dark:hover:stroke-gray-300", "h-10 w-10 p-2 m-auto"]),
             fill: "none",
             viewBox: "0 0 24 24",
             stroke: "none",
@@ -2882,7 +2882,7 @@ const Xn = { class: "relative flex-auto flex flex-col overflow-hidden" }, Zn = {
   Ma
 ], $a = {
   key: 3,
-  class: "absolute hidden md:block top-1/2 w-full text-center text-neutral-500"
+  class: "absolute hidden md:block top-1/3 w-full text-center text-neutral-500"
 }, Ia = { class: "break-all" }, Aa = {
   name: "VFExplorer"
 }, La = /* @__PURE__ */ Object.assign(Aa, {
@@ -3507,13 +3507,13 @@ const Xn = { class: "relative flex-auto flex flex-col overflow-hidden" }, Zn = {
     };
     return (S, $) => a.active ? (w(), C("ul", {
       key: 0,
-      class: "z-30 absolute text-base bg-neutral-50 dark:bg-gray-800 text-gray-700 dark:text-gray-200 border border-neutral-300 dark:border-gray-600 shadow rounded select-none",
+      class: "z-30 absolute text-base dark:bg-gray-800 text-gray-700 dark:text-gray-200 py-2 rounded bg-white shadow-lg select-none",
       ref_key: "contextmenu",
       ref: o,
       style: as(a.positions)
     }, [
       (w(!0), C(lt, null, St(a.items, (M) => (w(), C("li", {
-        class: "px-2 py-1.5 cursor-pointer hover:bg-neutral-200 dark:hover:bg-gray-700",
+        class: "px-2 py-1.5 cursor-pointer bg-transparent hover:bg-gray-100 hover:text-indigo-500 dark:hover:bg-gray-700",
         key: M.title,
         onClick: (I) => v(M)
       }, [
