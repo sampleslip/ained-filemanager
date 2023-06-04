@@ -3520,7 +3520,7 @@ const Xn = { class: "relative flex-auto flex flex-col overflow-hidden" }, Zn = {
   });
 };
 async function Cl(r) {
-  const t = await Dl(/* @__PURE__ */ Object.assign({ "../locales/en.json": () => import("./en-7468722e.js"), "../locales/fa.json": () => import("./fa-edcf6a05.js"), "../locales/he.json": () => import("./he-3e4155f0.js"), "../locales/ru.json": () => import("./ru-98cf54ad.js"), "../locales/tr.json": () => import("./tr-1ee5cec3.js") }), `../locales/${r}.json`);
+  const t = await Dl(/* @__PURE__ */ Object.assign({ "../locales/en.json": () => import("./en-7468722e.js"), "../locales/fa.json": () => import("./fa-edcf6a05.js"), "../locales/he.json": () => import("./he-3e4155f0.js"), "../locales/ru.json": () => import("./ru-64f07400.js"), "../locales/tr.json": () => import("./tr-1ee5cec3.js") }), `../locales/${r}.json`);
   return JSON.parse(t.default);
 }
 function El(r, t, s) {
@@ -3946,7 +3946,7 @@ const Ml = { class: "vuefinder" }, Tl = /* @__PURE__ */ p("iframe", {
         p("button", {
           type: "button",
           onClick: m,
-          class: "w-full inline-flex justify-center rounded-md border border-transparent shadow-sm px-4 py-2 bg-blue-600 dark:bg-gray-700 dark:hover:bg-gray-600/75 text-base font-medium text-white hover:bg-blue-700 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-red-500 sm:ml-3 sm:w-auto sm:text-sm"
+          class: "w-full inline-flex justify-center rounded-md border border-transparent shadow-sm px-4 py-2 bg-indigo-500 dark:bg-gray-700 dark:hover:bg-gray-600/75 text-base font-medium text-white hover:bg-indigo-600 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-red-500 sm:ml-3 sm:w-auto sm:text-sm"
         }, E(x(n)("Create")), 1),
         p("button", {
           type: "button",
@@ -4036,7 +4036,7 @@ const Ml = { class: "vuefinder" }, Tl = /* @__PURE__ */ p("iframe", {
         p("button", {
           type: "button",
           onClick: m,
-          class: "w-full inline-flex justify-center rounded-md border border-transparent shadow-sm px-4 py-2 bg-blue-600 dark:bg-gray-700 dark:hover:bg-gray-600/75 text-base font-medium text-white hover:bg-blue-700 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-red-500 sm:ml-3 sm:w-auto sm:text-sm"
+          class: "w-full inline-flex justify-center rounded-md border border-transparent shadow-sm px-4 py-2 bg-indigo-500 dark:bg-gray-700 dark:hover:bg-gray-600/75 text-base font-medium text-white hover:bg-indigo-600 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-red-500 sm:ml-3 sm:w-auto sm:text-sm"
         }, E(x(n)("Create")), 1),
         p("button", {
           type: "button",
@@ -5888,7 +5888,7 @@ const kd = { class: "flex" }, Dd = ["aria-label"], Cd = { class: "ml-auto mb-2" 
         p("button", {
           type: "button",
           onClick: l,
-          class: "w-full inline-flex justify-center rounded-md border border-transparent shadow-sm px-4 py-2 bg-blue-600 dark:bg-gray-700 dark:hover:bg-gray-600/75 text-base font-medium text-white hover:bg-blue-700 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-red-500 sm:ml-3 sm:w-auto sm:text-sm"
+          class: "w-full inline-flex justify-center rounded-md border border-transparent shadow-sm px-4 py-2 bg-indigo-500 dark:bg-gray-700 dark:hover:bg-gray-600/75 text-base font-medium text-white hover:bg-indigo-600 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-red-500 sm:ml-3 sm:w-auto sm:text-sm"
         }, E(x(n)("Rename")), 1),
         p("button", {
           type: "button",
@@ -6009,7 +6009,7 @@ const kd = { class: "flex" }, Dd = ["aria-label"], Cd = { class: "ml-auto mb-2" 
           disabled: b.value,
           onClick: Wt(S, ["prevent"]),
           type: "button",
-          class: ct([b.value ? "bg-indigo-200 hover:bg-indigo-200 dark:bg-gray-700/50 dark:hover:bg-gray-700/50 dark:text-gray-500" : "bg-blue-600 hover:bg-blue-700 dark:bg-gray-700 dark:hover:bg-gray-500", "w-full inline-flex justify-center rounded-md border border-transparent shadow-sm px-4 py-2 text-base font-medium text-white focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-red-500 sm:ml-3 sm:w-auto sm:text-sm"])
+          class: ct([b.value ? "bg-indigo-200 hover:bg-indigo-200 dark:bg-gray-700/50 dark:hover:bg-gray-700/50 dark:text-gray-500" : "bg-indigo-500 hover:bg-indigo-600 dark:bg-gray-700 dark:hover:bg-gray-500", "w-full inline-flex justify-center rounded-md border border-transparent shadow-sm px-4 py-2 text-base font-medium text-white focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-red-500 sm:ml-3 sm:w-auto sm:text-sm"])
         }, E(x(n)("Upload")), 11, Cu),
         p("button", {
           type: "button",
@@ -6141,7 +6141,7 @@ const kd = { class: "flex" }, Dd = ["aria-label"], Cd = { class: "ml-auto mb-2" 
         p("button", {
           type: "button",
           onClick: l,
-          class: "w-full inline-flex justify-center rounded-md border border-transparent shadow-sm px-4 py-2 bg-blue-600 dark:bg-gray-700 dark:hover:bg-gray-600/75 text-base font-medium text-white hover:bg-blue-700 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-red-500 sm:ml-3 sm:w-auto sm:text-sm"
+          class: "w-full inline-flex justify-center rounded-md border border-transparent shadow-sm px-4 py-2 bg-indigo-500 dark:bg-gray-700 dark:hover:bg-gray-600/75 text-base font-medium text-white hover:bg-indigo-600 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-red-500 sm:ml-3 sm:w-auto sm:text-sm"
         }, E(x(n)("Archive")), 1),
         p("button", {
           type: "button",
@@ -6264,7 +6264,7 @@ const kd = { class: "flex" }, Dd = ["aria-label"], Cd = { class: "ml-auto mb-2" 
         p("button", {
           type: "button",
           onClick: l,
-          class: "w-full inline-flex justify-center rounded-md border border-transparent shadow-sm px-4 py-2 bg-blue-600 dark:bg-gray-700 dark:hover:bg-gray-600/75 text-base font-medium text-white hover:bg-blue-700 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-red-500 sm:ml-3 sm:w-auto sm:text-sm"
+          class: "w-full inline-flex justify-center rounded-md border border-transparent shadow-sm px-4 py-2 bg-indigo-500 dark:bg-gray-700 dark:hover:bg-gray-600/75 text-base font-medium text-white hover:bg-indigo-600 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-red-500 sm:ml-3 sm:w-auto sm:text-sm"
         }, E(x(n)("Unarchive")), 1),
         p("button", {
           type: "button",
@@ -6392,7 +6392,7 @@ const kd = { class: "flex" }, Dd = ["aria-label"], Cd = { class: "ml-auto mb-2" 
         p("button", {
           type: "button",
           onClick: m,
-          class: "w-full inline-flex justify-center rounded-md border border-transparent shadow-sm px-4 py-2 bg-blue-600 dark:bg-gray-700 dark:hover:bg-gray-600/75 text-base font-medium text-white hover:bg-blue-700 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-red-500 sm:ml-3 sm:w-auto sm:text-sm"
+          class: "w-full inline-flex justify-center rounded-md border border-transparent shadow-sm px-4 py-2 bg-indigo-500 dark:bg-gray-700 dark:hover:bg-gray-600/75 text-base font-medium text-white hover:bg-indigo-600 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-red-500 sm:ml-3 sm:w-auto sm:text-sm"
         }, E(x(o)("Yes, Move!")), 1),
         p("button", {
           type: "button",

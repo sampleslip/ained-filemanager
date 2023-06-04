@@ -36,7 +36,7 @@ const e = `{\r
   "Yes, Move!": "Переместить",\r
   "Delete files": "Удалить файлы",\r
   "Yes, Delete!": "Удалить",\r
-  "Upload Files": "Загрузить файлы",\r
+  "Upload files": "Загрузить файлы",\r
   "No files selected!": "Файлы не выбраны!",\r
   "Select Files": "Выбрать файлы",\r
   "Archive the files": "Архивировать файлы",\r
