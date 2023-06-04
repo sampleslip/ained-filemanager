@@ -17,7 +17,7 @@ Vuefinder is a file manager component for Vue.js version 3
 
 
 ```bash
-npm i vuefinder
+npm i ained-filemanager
 ```
 
 JS entry point (it can be index.js or main.js)
