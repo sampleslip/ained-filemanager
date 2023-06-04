@@ -57,7 +57,7 @@ const Ro = { class: "flex justify-between items-center py-1 text-sm" }, Vo = {
   class: "flex text-center"
 }, Bo = ["aria-label"], zo = /* @__PURE__ */ p("svg", {
   xmlns: "http://www.w3.org/2000/svg",
-  class: "h-10 w-10 m-auto cursor-pointer stroke-gray-500 hover:stroke-indigo-500 hover:bg-indigo-200 p-2 rounded dark:stroke-gray-400 dark:hover:stroke-gray-300",
+  class: "h-9 w-9 m-auto cursor-pointer stroke-gray-500 hover:stroke-indigo-500 hover:bg-indigo-200 p-2 rounded dark:stroke-gray-400 dark:hover:stroke-gray-300",
   fill: "none",
   viewBox: "0 0 24 24",
   stroke: "none",
@@ -72,7 +72,7 @@ const Ro = { class: "flex justify-between items-center py-1 text-sm" }, Vo = {
   zo
 ], Uo = ["aria-label"], Ko = /* @__PURE__ */ p("svg", {
   xmlns: "http://www.w3.org/2000/svg",
-  class: "h-10 w-10 m-auto cursor-pointer stroke-gray-500 hover:stroke-indigo-500 hover:bg-indigo-200 p-2 rounded dark:stroke-gray-400 dark:hover:stroke-gray-300",
+  class: "h-9 w-9 m-auto cursor-pointer stroke-gray-500 hover:stroke-indigo-500 hover:bg-indigo-200 p-2 rounded dark:stroke-gray-400 dark:hover:stroke-gray-300",
   fill: "none",
   viewBox: "0 0 24 24",
   stroke: "none",
@@ -99,7 +99,7 @@ const Ro = { class: "flex justify-between items-center py-1 text-sm" }, Vo = {
   qo
 ], Jo = ["aria-label"], Qo = /* @__PURE__ */ p("svg", {
   xmlns: "http://www.w3.org/2000/svg",
-  class: "h-10 w-10 m-auto cursor-pointer stroke-gray-500 hover:stroke-indigo-500 hover:bg-indigo-200 p-2 rounded dark:stroke-gray-400 dark:hover:stroke-gray-300",
+  class: "h-9 w-9 m-auto cursor-pointer stroke-gray-500 hover:stroke-indigo-500 hover:bg-indigo-200 p-2 rounded dark:stroke-gray-400 dark:hover:stroke-gray-300",
   fill: "none",
   viewBox: "0 0 24 24",
   stroke: "none",
@@ -129,7 +129,7 @@ const Ro = { class: "flex justify-between items-center py-1 text-sm" }, Vo = {
   class: "flex text-center"
 }, li = { class: "pl-2" }, ci = { class: "dark:bg-gray-700 text-base px-2 p-2 bg-gray-100 rounded" }, di = {
   key: 0,
-  class: "animate-spin p-2 h-10 w-10 text-white ml-auto",
+  class: "animate-spin p-2 h-9 w-9 text-white ml-auto",
   xmlns: "http://www.w3.org/2000/svg",
   fill: "none",
   viewBox: "0 0 24 24"
@@ -149,7 +149,7 @@ const Ro = { class: "flex justify-between items-center py-1 text-sm" }, Vo = {
   hi
 ], pi = { class: "flex text-center items-center justify-end" }, gi = ["aria-label"], mi = {
   xmlns: "http://www.w3.org/2000/svg",
-  class: "h-10 w-10 p-2 m-auto cursor-pointer stroke-gray-500 hover:stroke-indigo-500 hover:bg-indigo-200 rounded dark:stroke-gray-400 dark:hover:stroke-gray-300",
+  class: "h-9 w-9 p-2 m-auto cursor-pointer stroke-gray-500 hover:stroke-indigo-500 hover:bg-indigo-200 rounded dark:stroke-gray-400 dark:hover:stroke-gray-300",
   fill: "none",
   viewBox: "0 0 24 24",
   stroke: "none",
@@ -201,21 +201,18 @@ const Ro = { class: "flex justify-between items-center py-1 text-sm" }, Vo = {
         f() ? (w(), C("svg", di, fi)) : Z("", !0)
       ])) : (w(), C("div", Vo, [
         p("div", {
-          class: "mx-1.5",
           "aria-label": x(n)("New Folder"),
           "data-microtip-position": "bottom-right",
           role: "tooltip",
           onClick: $[0] || ($[0] = (M) => x(t).emit("vf-modal-show", { type: "new-folder", items: u.value }))
         }, Ho, 8, Bo),
         p("div", {
-          class: "mx-1.5",
           "aria-label": x(n)("New File"),
           "data-microtip-position": "bottom",
           role: "tooltip",
           onClick: $[1] || ($[1] = (M) => x(t).emit("vf-modal-show", { type: "new-file", items: u.value }))
         }, Yo, 8, Uo),
         p("div", {
-          class: "mx-1.5",
           "aria-label": x(n)("Rename"),
           "data-microtip-position": "bottom",
           role: "tooltip",
@@ -223,7 +220,7 @@ const Ro = { class: "flex justify-between items-center py-1 text-sm" }, Vo = {
         }, [
           (w(), C("svg", {
             xmlns: "http://www.w3.org/2000/svg",
-            class: ct([u.value.length == 1 ? "cursor-pointer stroke-gray-500 hover:stroke-indigo-500 hover:bg-indigo-200 rounded dark:stroke-gray-400 dark:hover:stroke-gray-300" : "stroke-gray-200  dark:stroke-gray-700", "h-10 w-10 m-auto p-2"]),
+            class: ct([u.value.length == 1 ? "cursor-pointer stroke-gray-500 hover:stroke-indigo-500 hover:bg-indigo-200 rounded dark:stroke-gray-400 dark:hover:stroke-gray-300" : "stroke-gray-200  dark:stroke-gray-700", "h-9 w-9 m-auto p-2"]),
             fill: "none",
             viewBox: "0 0 24 24",
             stroke: "none",
@@ -231,7 +228,6 @@ const Ro = { class: "flex justify-between items-center py-1 text-sm" }, Vo = {
           }, Zo, 2))
         ], 8, Wo),
         p("div", {
-          class: "mx-1.5",
           "aria-label": x(n)("Delete"),
           "data-microtip-position": "bottom",
           role: "tooltip",
@@ -239,7 +235,7 @@ const Ro = { class: "flex justify-between items-center py-1 text-sm" }, Vo = {
         }, [
           (w(), C("svg", {
             xmlns: "http://www.w3.org/2000/svg",
-            class: ct([u.value.length ? "cursor-pointer stroke-gray-500 hover:stroke-indigo-500 hover:bg-indigo-200 rounded dark:stroke-gray-400 dark:hover:stroke-gray-300" : "stroke-gray-200  dark:stroke-gray-700", "h-10 w-10 m-auto p-2"]),
+            class: ct([u.value.length ? "cursor-pointer stroke-gray-500 hover:stroke-indigo-500 hover:bg-indigo-200 rounded dark:stroke-gray-400 dark:hover:stroke-gray-300" : "stroke-gray-200  dark:stroke-gray-700", "h-9 w-9 m-auto p-2"]),
             fill: "none",
             viewBox: "0 0 24 24",
             stroke: "none",
@@ -247,7 +243,6 @@ const Ro = { class: "flex justify-between items-center py-1 text-sm" }, Vo = {
           }, Go, 2))
         ], 8, Fo),
         p("div", {
-          class: "mx-1.5",
           "aria-label": x(n)("Upload"),
           "data-microtip-position": "bottom",
           role: "tooltip",
@@ -255,7 +250,6 @@ const Ro = { class: "flex justify-between items-center py-1 text-sm" }, Vo = {
         }, ti, 8, Jo),
         u.value.length == 1 && u.value[0].mime_type == "application/zip" ? (w(), C("div", {
           key: 0,
-          class: "mx-1.5",
           "aria-label": x(n)("Unrchive"),
           "data-microtip-position": "bottom",
           role: "tooltip",
@@ -263,7 +257,7 @@ const Ro = { class: "flex justify-between items-center py-1 text-sm" }, Vo = {
         }, [
           (w(), C("svg", {
             xmlns: "http://www.w3.org/2000/svg",
-            class: ct([u.value.length ? "cursor-pointer stroke-gray-500 hover:stroke-indigo-500 hover:bg-indigo-200 rounded dark:stroke-gray-400 dark:hover:stroke-gray-300" : "stroke-gray-200  dark:stroke-gray-700", "h-10 w-10 m-auto p-2"]),
+            class: ct([u.value.length ? "cursor-pointer stroke-gray-500 hover:stroke-indigo-500 hover:bg-indigo-200 rounded dark:stroke-gray-400 dark:hover:stroke-gray-300" : "stroke-gray-200  dark:stroke-gray-700", "h-9 w-9 m-auto p-2"]),
             fill: "none",
             viewBox: "0 0 24 24",
             stroke: "none",
@@ -271,7 +265,6 @@ const Ro = { class: "flex justify-between items-center py-1 text-sm" }, Vo = {
           }, si, 2))
         ], 8, ei)) : (w(), C("div", {
           key: 1,
-          class: "mx-1.5",
           "aria-label": x(n)("Archive"),
           "data-microtip-position": "bottom",
           role: "tooltip",
@@ -279,7 +272,7 @@ const Ro = { class: "flex justify-between items-center py-1 text-sm" }, Vo = {
         }, [
           (w(), C("svg", {
             xmlns: "http://www.w3.org/2000/svg",
-            class: ct([u.value.length ? "cursor-pointer stroke-gray-500 hover:stroke-indigo-500 hover:bg-indigo-200 rounded dark:stroke-gray-400 dark:hover:stroke-gray-300" : "stroke-gray-200  dark:stroke-gray-700", "h-10 w-10 m-auto p-2"]),
+            class: ct([u.value.length ? "cursor-pointer stroke-gray-500 hover:stroke-indigo-500 hover:bg-indigo-200 rounded dark:stroke-gray-400 dark:hover:stroke-gray-300" : "stroke-gray-200  dark:stroke-gray-700", "h-9 w-9 m-auto p-2"]),
             fill: "none",
             viewBox: "0 0 24 24",
             stroke: "none",
@@ -289,7 +282,6 @@ const Ro = { class: "flex justify-between items-center py-1 text-sm" }, Vo = {
       ])),
       p("div", pi, [
         p("div", {
-          class: "mx-1.5",
           "aria-label": x(n)("Toggle Full Screen"),
           "data-microtip-position": "bottom-left",
           role: "tooltip",
@@ -300,7 +292,6 @@ const Ro = { class: "flex justify-between items-center py-1 text-sm" }, Vo = {
           ]))
         ], 8, gi),
         p("div", {
-          class: "mx-1.5",
           "aria-label": x(n)("Change View"),
           "data-microtip-position": "bottom-left",
           role: "tooltip",
@@ -308,7 +299,7 @@ const Ro = { class: "flex justify-between items-center py-1 text-sm" }, Vo = {
         }, [
           (w(), C("svg", {
             xmlns: "http://www.w3.org/2000/svg",
-            class: ct([l.value.length ? "stroke-gray-200  dark:stroke-gray-700" : "cursor-pointer  stroke-gray-500 hover:stroke-indigo-500 hover:bg-indigo-200 rounded  dark:stroke-gray-400 dark:hover:stroke-gray-300", "h-10 w-10 p-2 m-auto"]),
+            class: ct([l.value.length ? "stroke-gray-200  dark:stroke-gray-700" : "cursor-pointer  stroke-gray-500 hover:stroke-indigo-500 hover:bg-indigo-200 rounded  dark:stroke-gray-400 dark:hover:stroke-gray-300", "h-9 w-9 p-2 m-auto"]),
             fill: "none",
             viewBox: "0 0 24 24",
             stroke: "none",
@@ -2882,7 +2873,7 @@ const Xn = { class: "relative flex-auto flex flex-col overflow-hidden" }, Zn = {
   Ma
 ], $a = {
   key: 3,
-  class: "absolute hidden md:block top-1/3 w-full text-center text-neutral-500"
+  class: "absolute hidden md:block top-1/3 w-full text-center text-neutral-500 text-sm"
 }, Ia = { class: "break-all" }, Aa = {
   name: "VFExplorer"
 }, La = /* @__PURE__ */ Object.assign(Aa, {
