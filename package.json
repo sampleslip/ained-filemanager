@@ -1,7 +1,7 @@
 {
   "name": "ained-filemanager",
-  "version": "1.2.0",
-  "description": "Vuefinder is a file manager component for vuejs.",
+  "version": "0.4",
+  "description": "Ained-filemanager is a file manager component for vuejs.",
   "type": "module",
   "files": [
     "dist"
@@ -13,7 +13,7 @@
     "build": "vite build",
     "preview": "vite preview"
   },
-  "homepage": "https://github.com/n1crack/vuefinder#readme",
+  "homepage": "git@github.com:sampleslip/ained-filemanager.git#readme",
   "keywords": [
     "vue",
     "file manager",
@@ -23,11 +23,11 @@
   ],
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/n1crack/vuefinder.git"
+    "url": "git+https://github.com/sampleslip/ained-filemanager.git"
   },
   "author": {
-    "name": "Yusuf Özdemir",
-    "mail": "yusuf@ozdemir.be"
+    "name": "Ained Digital",
+    "mail": "info@ained.ru"
   },
   "license": "MIT",
   "devDependencies": {
