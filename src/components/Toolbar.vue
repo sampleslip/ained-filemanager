@@ -72,7 +72,7 @@
       <div class="pl-2"> {{ t('Search results for') }} <span class="dark:bg-gray-700 text-base px-2 p-2 bg-gray-100 rounded">{{ searchQuery }}</span></div>
        <svg
             class="animate-spin  p-2 h-9 w-9 text-white ml-auto" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24"  v-if="isLoading()">
-        <circle class="opacity-25 stroke-blue-900 dark:stroke-blue-100" cx="12" cy="12" r="10" stroke="currentColor" stroke-width="4"></circle>
+        <circle class="opacity-25 stroke-indigo-900 dark:stroke-indigo-100" cx="12" cy="12" r="10" stroke="currentColor" stroke-width="4"></circle>
         <path class="opacity-75" fill="currentColor"
               d="M4 12a8 8 0 018-8V0C5.373 0 0 5.373 0 12h4zm2 5.291A7.962 7.962 0 014 12H0c0 3.042 1.135 5.824 3 7.938l3-2.647z"></path>
       </svg>

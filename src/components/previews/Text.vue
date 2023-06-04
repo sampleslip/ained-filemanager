@@ -5,9 +5,9 @@
       {{ selection.item.basename }}
     </div>
     <div class="ml-auto mb-2">
-      <button @click="save" class="ml-1 px-2 py-1 rounded border border-transparent shadow-sm bg-blue-700/75 hover:bg-blue-700 dark:bg-gray-700 dark:hover:bg-gray-700/50  text-base font-medium text-white sm:ml-3 sm:w-auto sm:text-sm" v-if="showEdit">
+      <button @click="save" class="ml-1 px-2 py-1 rounded border border-transparent shadow-sm bg-indigo-700/75 hover:bg-indigo-700 dark:bg-gray-700 dark:hover:bg-gray-700/50  text-base font-medium text-white sm:ml-3 sm:w-auto sm:text-sm" v-if="showEdit">
         {{ t('Save') }}</button>
-      <button class="ml-1 px-2 py-1  text-blue-500" @click="editMode()">{{ showEdit ? t('Cancel'): t('Edit') }}</button>
+      <button class="ml-1 px-2 py-1  text-indigo-500" @click="editMode()">{{ showEdit ? t('Cancel'): t('Edit') }}</button>
     </div>
   </div>
   <div>

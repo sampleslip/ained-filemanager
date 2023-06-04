@@ -134,7 +134,7 @@ const Ro = { class: "flex justify-between items-center py-1 text-sm" }, Vo = {
   fill: "none",
   viewBox: "0 0 24 24"
 }, ui = /* @__PURE__ */ p("circle", {
-  class: "opacity-25 stroke-blue-900 dark:stroke-blue-100",
+  class: "opacity-25 stroke-indigo-900 dark:stroke-indigo-100",
   cx: "12",
   cy: "12",
   r: "10",
@@ -3208,7 +3208,7 @@ const Xn = { class: "relative flex-auto flex flex-col overflow-hidden" }, Zn = {
   fill: "none",
   viewBox: "0 0 24 24"
 }, dl = /* @__PURE__ */ p("circle", {
-  class: "opacity-25 stroke-blue-900 dark:stroke-blue-100",
+  class: "opacity-25 stroke-indigo-900 dark:stroke-indigo-100",
   cx: "12",
   cy: "12",
   r: "10",
@@ -4129,10 +4129,10 @@ const Ml = { class: "vuefinder" }, Tl = /* @__PURE__ */ p("iframe", {
           u.value ? (w(), C("button", {
             key: 0,
             onClick: $,
-            class: "ml-1 px-2 py-1 rounded border border-transparent shadow-sm bg-blue-700/75 hover:bg-blue-700 dark:bg-gray-700 dark:hover:bg-gray-700/50 text-base font-medium text-white sm:ml-3 sm:w-auto sm:text-sm"
+            class: "ml-1 px-2 py-1 rounded border border-transparent shadow-sm bg-indigo-700/75 hover:bg-indigo-700 dark:bg-gray-700 dark:hover:bg-gray-700/50 text-base font-medium text-white sm:ml-3 sm:w-auto sm:text-sm"
           }, E(x(f)("Save")), 1)) : Z("", !0),
           p("button", {
-            class: "ml-1 px-2 py-1 text-blue-500",
+            class: "ml-1 px-2 py-1 text-indigo-500",
             onClick: I[0] || (I[0] = (T) => b())
           }, E(u.value ? x(f)("Cancel") : x(f)("Edit")), 1)
         ])
@@ -5554,10 +5554,10 @@ const kd = { class: "flex" }, Dd = ["aria-label"], Cd = { class: "ml-auto mb-2" 
           m.value ? (w(), C("button", {
             key: 0,
             onClick: S,
-            class: "ml-1 px-2 py-1 rounded border border-transparent shadow-sm bg-blue-700/75 hover:bg-blue-700 dark:bg-gray-700 dark:hover:bg-gray-700/50 text-base font-medium text-white sm:ml-3 sm:w-auto sm:text-sm"
+            class: "ml-1 px-2 py-1 rounded border border-transparent shadow-sm bg-indigo-700/75 hover:bg-indigo-700 dark:bg-gray-700 dark:hover:bg-gray-700/50 text-base font-medium text-white sm:ml-3 sm:w-auto sm:text-sm"
           }, E(x(o)("Crop")), 1)) : Z("", !0),
           p("button", {
-            class: "ml-1 px-2 py-1 text-blue-500",
+            class: "ml-1 px-2 py-1 text-indigo-500",
             onClick: M[0] || (M[0] = (I) => f())
           }, E(m.value ? x(o)("Cancel") : x(o)("Edit")), 1)
         ])
@@ -5722,7 +5722,7 @@ const kd = { class: "flex" }, Dd = ["aria-label"], Cd = { class: "ml-auto mb-2" 
   viewBox: "0 0 24 24"
 }, [
   /* @__PURE__ */ p("circle", {
-    class: "opacity-25 stroke-blue-900 dark:stroke-blue-100",
+    class: "opacity-25 stroke-indigo-900 dark:stroke-indigo-100",
     cx: "12",
     cy: "12",
     r: "10",
