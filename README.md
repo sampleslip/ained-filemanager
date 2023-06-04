@@ -107,4 +107,4 @@ Html
  - [vanilla-lazyload](https://github.com/verlok/vanilla-lazyload) : lazy loading for thumbnails
 
 ### License
-Copyright (c) 2018 Yusuf ÖZDEMİR, released under [the MIT license](LICENSE)
+Copyright (c) 2018 Yusuf ÖZDEMİR, released under [the MIT license](licenses/LICENSE)
