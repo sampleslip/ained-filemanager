@@ -1,5 +1,5 @@
 <template>
-  <div class="p-1 text-xs flex justify-between select-none">
+  <div class="p-1 text-base flex justify-between select-none">
     <div class="flex leading-5 items-center">
       <div class="mx-2" :aria-label="t('Storage')" data-microtip-position="top-right" role="tooltip">
         <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="1">

@@ -127,9 +127,9 @@ const Ro = { class: "flex justify-between items-center py-1 text-sm" }, Vo = {
 ], ai = {
   key: 1,
   class: "flex text-center"
-}, li = { class: "pl-2" }, ci = { class: "dark:bg-gray-700 text-xs px-2 p-2 bg-gray-100 rounded" }, di = {
+}, li = { class: "pl-2" }, ci = { class: "dark:bg-gray-700 text-base px-2 p-2 bg-gray-100 rounded" }, di = {
   key: 0,
-  class: "animate-spin p-0.5 h-10 w-10 text-white ml-auto",
+  class: "animate-spin p-2 h-10 w-10 text-white ml-auto",
   xmlns: "http://www.w3.org/2000/svg",
   fill: "none",
   viewBox: "0 0 24 24"
@@ -149,7 +149,7 @@ const Ro = { class: "flex justify-between items-center py-1 text-sm" }, Vo = {
   hi
 ], pi = { class: "flex text-center items-center justify-end" }, gi = ["aria-label"], mi = {
   xmlns: "http://www.w3.org/2000/svg",
-  class: "h-10 w-10 m-auto cursor-pointer stroke-gray-500 hover:stroke-cyan-700 dark:stroke-gray-400 dark:hover:stroke-gray-300",
+  class: "h-10 w-10 p-2 m-auto cursor-pointer stroke-gray-500 hover:stroke-cyan-700 dark:stroke-gray-400 dark:hover:stroke-gray-300",
   fill: "none",
   viewBox: "0 0 24 24",
   stroke: "none",
@@ -223,7 +223,7 @@ const Ro = { class: "flex justify-between items-center py-1 text-sm" }, Vo = {
         }, [
           (w(), C("svg", {
             xmlns: "http://www.w3.org/2000/svg",
-            class: ct([u.value.length == 1 ? "cursor-pointer hover:stroke-indigo-200 hover:bg-indigo-200 p-2 rounded dark:stroke-gray-400 dark:hover:stroke-gray-300" : "stroke-gray-200  dark:stroke-gray-700", "h-10 w-10 m-auto"]),
+            class: ct([u.value.length == 1 ? "cursor-pointer hover:stroke-indigo-200 hover:bg-indigo-200 rounded dark:stroke-gray-400 dark:hover:stroke-gray-300" : "stroke-gray-200  dark:stroke-gray-700", "h-10 w-10 m-auto p-2"]),
             fill: "none",
             viewBox: "0 0 24 24",
             stroke: "none",
@@ -239,7 +239,7 @@ const Ro = { class: "flex justify-between items-center py-1 text-sm" }, Vo = {
         }, [
           (w(), C("svg", {
             xmlns: "http://www.w3.org/2000/svg",
-            class: ct([u.value.length ? "cursor-pointer hover:stroke-indigo-200 hover:bg-indigo-200 p-2 rounded dark:stroke-gray-400 dark:hover:stroke-gray-300" : "stroke-gray-200  dark:stroke-gray-700", "h-10 w-10 m-auto"]),
+            class: ct([u.value.length ? "cursor-pointer hover:stroke-indigo-200 hover:bg-indigo-200 rounded dark:stroke-gray-400 dark:hover:stroke-gray-300" : "stroke-gray-200  dark:stroke-gray-700", "h-10 w-10 m-auto p-2"]),
             fill: "none",
             viewBox: "0 0 24 24",
             stroke: "none",
@@ -263,7 +263,7 @@ const Ro = { class: "flex justify-between items-center py-1 text-sm" }, Vo = {
         }, [
           (w(), C("svg", {
             xmlns: "http://www.w3.org/2000/svg",
-            class: ct([u.value.length ? "cursor-pointer hover:stroke-indigo-200 hover:bg-indigo-200 p-2 rounded dark:stroke-gray-400 dark:hover:stroke-gray-300" : "stroke-gray-200  dark:stroke-gray-700", "h-10 w-10 m-auto"]),
+            class: ct([u.value.length ? "cursor-pointer hover:stroke-indigo-200 hover:bg-indigo-200 rounded dark:stroke-gray-400 dark:hover:stroke-gray-300" : "stroke-gray-200  dark:stroke-gray-700", "h-10 w-10 m-auto p-2"]),
             fill: "none",
             viewBox: "0 0 24 24",
             stroke: "none",
@@ -279,7 +279,7 @@ const Ro = { class: "flex justify-between items-center py-1 text-sm" }, Vo = {
         }, [
           (w(), C("svg", {
             xmlns: "http://www.w3.org/2000/svg",
-            class: ct([u.value.length ? "cursor-pointer hover:stroke-indigo-200 hover:bg-indigo-200 p-2 rounded dark:stroke-gray-400 dark:hover:stroke-gray-300" : "stroke-gray-200  dark:stroke-gray-700", "h-10 w-10 m-auto"]),
+            class: ct([u.value.length ? "cursor-pointer hover:stroke-indigo-200 hover:bg-indigo-200 rounded dark:stroke-gray-400 dark:hover:stroke-gray-300" : "stroke-gray-200  dark:stroke-gray-700", "h-10 w-10 m-auto p-2"]),
             fill: "none",
             viewBox: "0 0 24 24",
             stroke: "none",
@@ -308,7 +308,7 @@ const Ro = { class: "flex justify-between items-center py-1 text-sm" }, Vo = {
         }, [
           (w(), C("svg", {
             xmlns: "http://www.w3.org/2000/svg",
-            class: ct([l.value.length ? "stroke-gray-200  dark:stroke-gray-700" : "cursor-pointer stroke-gray-500 hover:stroke-cyan-700 dark:stroke-gray-400 dark:hover:stroke-gray-300", "h-10 w-10 m-auto"]),
+            class: ct([l.value.length ? "stroke-gray-200  dark:stroke-gray-700" : "cursor-pointer stroke-gray-500 hover:stroke-cyan-700 dark:stroke-gray-400 dark:hover:stroke-gray-300", "h-10 w-10 p-2 m-auto"]),
             fill: "none",
             viewBox: "0 0 24 24",
             stroke: "none",
@@ -2432,7 +2432,7 @@ const Ei = /* @__PURE__ */ Di(Ci), cs = (r, t, s, o, n) => (t = Math, s = t.log,
           (w(!0), C(lt, null, St(a.value, (f, b) => (w(), C("div", {
             onClick: (S) => u(b),
             key: f,
-            class: ct([n(f.type), "inline-block mx-auto my-0.5 py-0.5 px-2 min-w-max bg-gray-50 dark:bg-gray-600 border text-xs sm:text-sm rounded cursor-pointer"])
+            class: ct([n(f.type), "inline-block mx-auto my-0.5 py-0.5 px-2 min-w-max bg-gray-50 dark:bg-gray-600 border text-base sm:text-sm rounded cursor-pointer"])
           }, E(f.label), 11, Pi))), 128))
         ]),
         _: 1
@@ -2782,7 +2782,7 @@ _e.resetStatus = (r) => {
 zt && Bi(_e, window.lazyLoadOptions);
 const Xn = { class: "relative flex-auto flex flex-col overflow-hidden" }, Zn = {
   key: 0,
-  class: "grid grid-cols-12 border-b border-neutral-300 border-gray-200 dark:border-gray-700 text-xs select-none"
+  class: "grid grid-cols-12 border-b border-neutral-300 border-gray-200 dark:border-gray-700 text-base select-none"
 }, Fn = { class: "absolute" }, qn = /* @__PURE__ */ p("svg", {
   xmlns: "http://www.w3.org/2000/svg",
   class: "absolute h-6 w-6 md:h-12 md:w-12 m-auto stroke-neutral-500 fill-white dark:fill-gray-700 dark:stroke-gray-600 z-10",
@@ -2796,7 +2796,7 @@ const Xn = { class: "relative flex-auto flex flex-col overflow-hidden" }, Zn = {
     "stroke-linejoin": "round",
     d: "M7 21h10a2 2 0 002-2V9.414a1 1 0 00-.293-.707l-5.414-5.414A1 1 0 0012.586 3H7a2 2 0 00-2 2v14a2 2 0 002 2z"
   })
-], -1), Gn = { class: "text-neutral-700 dark:text-neutral-300 p-1 absolute text-center top-4 right-[-2rem] md:top-5 md:right-[-2.4rem] z-20 text-xs" }, Jn = ["onDblclick", "onContextmenu", "data-type", "data-item", "data-index"], Qn = { class: "grid grid-cols-12 items-center" }, ta = { class: "flex col-span-7 items-center" }, ea = {
+], -1), Gn = { class: "text-neutral-700 dark:text-neutral-300 p-1 absolute text-center top-4 right-[-2rem] md:top-5 md:right-[-2.4rem] z-20 text-base" }, Jn = ["onDblclick", "onContextmenu", "data-type", "data-item", "data-index"], Qn = { class: "grid grid-cols-12 items-center" }, ta = { class: "flex col-span-7 items-center" }, ea = {
   key: 0,
   xmlns: "http://www.w3.org/2000/svg",
   class: "h-5 w-5 text-neutral-500 fill-indigo-200 stroke-indigo-200 dark:fill-slate-500 dark:stroke-slate-500",
@@ -3040,7 +3040,7 @@ const Xn = { class: "relative flex-auto flex flex-col overflow-hidden" }, Zn = {
       p("div", {
         onTouchstart: z,
         onContextmenu: R[10] || (R[10] = Wt((O) => x(s).emit("vf-contextmenu-show", { event: O, area: l.value, items: et() }), ["self", "prevent"])),
-        class: ct([M.value ? "" : "resize-y", "h-full w-full text-xs vf-selector-area min-h-[150px] overflow-auto p-1 z-0"]),
+        class: ct([M.value ? "" : "resize-y", "h-full w-full text-base vf-selector-area min-h-[150px] overflow-auto p-1 z-0"]),
         ref_key: "selectorArea",
         ref: l
       }, [
@@ -3116,7 +3116,7 @@ const Xn = { class: "relative flex-auto flex flex-col overflow-hidden" }, Zn = {
       Dt(ji)
     ]));
   }
-}), Oa = { class: "p-1 text-xs flex justify-between select-none" }, Pa = { class: "flex leading-5 items-center" }, Na = ["aria-label"], ja = /* @__PURE__ */ p("svg", {
+}), Oa = { class: "p-1 text-base flex justify-between select-none" }, Pa = { class: "flex leading-5 items-center" }, Na = ["aria-label"], ja = /* @__PURE__ */ p("svg", {
   xmlns: "http://www.w3.org/2000/svg",
   class: "h-5 w-5",
   fill: "none",
@@ -3194,7 +3194,7 @@ const Xn = { class: "relative flex-auto flex flex-col overflow-hidden" }, Zn = {
       s
     )
   }));
-}, Xa = { class: "flex p-2 bg-gray-100 dark:bg-gray-800 rounded dark:border-gray-700/50 items-center select-none text-xs" }, Za = ["aria-label"], Fa = /* @__PURE__ */ p("path", {
+}, Xa = { class: "flex p-2 bg-gray-100 dark:bg-gray-800 rounded dark:border-gray-700/50 items-center select-none text-base" }, Za = ["aria-label"], Fa = /* @__PURE__ */ p("path", {
   "fill-rule": "evenodd",
   d: "M5.293 9.707a1 1 0 010-1.414l4-4a1 1 0 011.414 0l4 4a1 1 0 01-1.414 1.414L11 7.414V15a1 1 0 11-2 0V7.414L6.707 9.707a1 1 0 01-1.414 0z",
   "clip-rule": "evenodd"
@@ -3507,7 +3507,7 @@ const Xn = { class: "relative flex-auto flex flex-col overflow-hidden" }, Zn = {
     };
     return (S, $) => a.active ? (w(), C("ul", {
       key: 0,
-      class: "z-30 absolute text-xs bg-neutral-50 dark:bg-gray-800 text-gray-700 dark:text-gray-200 border border-neutral-300 dark:border-gray-600 shadow rounded select-none",
+      class: "z-30 absolute text-base bg-neutral-50 dark:bg-gray-800 text-gray-700 dark:text-gray-200 border border-neutral-300 dark:border-gray-600 shadow rounded select-none",
       ref_key: "contextmenu",
       ref: o,
       style: as(a.positions)

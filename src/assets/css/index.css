@@ -40,6 +40,10 @@
     .vf-selector-area::-webkit-scrollbar-corner {
         @apply bg-transparent;
     }
+
+    .stroke-indigo-200 {
+        stroke: #c7d2fe;
+    }
 }
 
 @tailwind utilities;

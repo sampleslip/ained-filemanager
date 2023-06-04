@@ -9,7 +9,7 @@
     >
       <div v-for="(message, index) in messageQueue" @click="removeItem(index)" :key="message"
            :class="getTypeClass(message.type)"
-           class="inline-block mx-auto my-0.5 py-0.5 px-2 min-w-max bg-gray-50 dark:bg-gray-600 border text-xs sm:text-sm rounded cursor-pointer ">
+           class="inline-block mx-auto my-0.5 py-0.5 px-2 min-w-max bg-gray-50 dark:bg-gray-600 border text-base sm:text-sm rounded cursor-pointer ">
          {{ message.label }}
       </div>
     </transition-group>
