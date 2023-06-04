@@ -6,7 +6,12 @@ module.exports = {
   important: '.vuefinder',
   darkMode: 'class',
   theme: {
-    extend: {},
+    extend: {
+      fontSize: '16px',
+      colors: {
+        'base': '#212B36',
+      },
+    },
   },
   plugins: [],
   corePlugins: {

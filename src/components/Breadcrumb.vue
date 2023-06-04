@@ -1,5 +1,5 @@
 <template>
-  <div class="flex p-1.5 bg-neutral-100 dark:bg-gray-800 border-t border-b border-neutral-300 dark:border-gray-700/50 items-center select-none  text-xs">
+  <div class="flex p-2 bg-gray-100 dark:bg-gray-800 rounded dark:border-gray-700/50 items-center select-none  text-xs">
     <span :aria-label="t('Go up a directory')" data-microtip-position="bottom-right" role="tooltip">
       <svg
           @dragover="handleDragOver($event)"
