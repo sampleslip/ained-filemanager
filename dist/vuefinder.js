@@ -2874,7 +2874,7 @@ const Xn = { class: "relative flex-auto flex flex-col overflow-hidden" }, Zn = {
 ], $a = {
   key: 3,
   class: "absolute hidden md:block top-1/3 w-full text-center text-neutral-500 text-sm"
-}, Ia = { class: "break-all" }, Aa = {
+}, Ia = { class: "break-all dark:text-white" }, Aa = {
   name: "VFExplorer"
 }, La = /* @__PURE__ */ Object.assign(Aa, {
   props: {
