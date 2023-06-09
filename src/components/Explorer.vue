@@ -108,7 +108,7 @@
               </svg>
               <div class="absolute hidden md:block top-1/3 w-full text-center text-neutral-500 text-sm" v-if="!(item.mime_type ?? '').startsWith('image') && item.type != 'dir'">{{ ext(item.extension) }}</div>
             </div>
-            <span class="break-all">{{ title_shorten(item.basename) }}</span>
+            <span class="break-all dark:text-white">{{ title_shorten(item.basename) }}</span>
           </div>
       </div>
 
