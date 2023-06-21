@@ -1,7 +1,7 @@
 <template>
   <v-f-modal-layout>
     <div class="sm:flex sm:items-start">
-      <div class="mx-auto flex-shrink-0 flex items-center justify-center h-12 w-12 rounded-full bg-indigo-200 dark:bg-gray-500 sm:mx-0 sm:h-10 sm:w-10">
+      <div class="mx-auto flex-shrink-0 flex items-center justify-center h-10 w-10 rounded-full bg-indigo-200 dark:bg-gray-500 sm:mx-0 sm:h-10 sm:w-10">
          <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 stroke-indigo-500 dark:stroke-indigo-100" fill="none" viewBox="0 0 24 24" stroke="none" stroke-width="1.5">
             <path stroke-linecap="round" stroke-linejoin="round" d="M4 16v1a3 3 0 003 3h10a3 3 0 003-3v-1m-4-8l-4-4m0 0L8 8m4-4v12" />
           </svg>
@@ -30,7 +30,7 @@
               :class="disableUploadButton ? 'bg-indigo-200 hover:bg-indigo-200 dark:bg-gray-700/50 dark:hover:bg-gray-700/50 dark:text-gray-500' : 'bg-indigo-500 hover:bg-indigo-600 dark:bg-gray-700 dark:hover:bg-gray-500'"
               class="w-full inline-flex justify-center rounded-md border border-transparent shadow-sm px-4 py-2 text-base font-medium text-white focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-red-500 sm:ml-3 sm:w-auto sm:text-sm">
         {{ t('Upload') }}</button>
-      <button type="button" @click="emitter.emit('vf-modal-close')" class="mt-3 w-full inline-flex justify-center rounded-md border border-gray-300 shadow-sm px-4 py-2 bg-white text-base font-medium text-gray-700 hover:bg-gray-50 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-indigo-500 sm:mt-0 sm:ml-3 sm:w-auto sm:text-sm">{{ t('Cancel') }}</button>
+      <button type="button" @click="emitter.emit('vf-modal-close')" class="w-full inline-flex justify-center rounded-md border border-gray-300 shadow-sm px-4 py-2 bg-white text-base font-medium text-gray-700 hover:bg-gray-50 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-indigo-500 sm:mt-0 sm:ml-3 sm:w-auto sm:text-sm">{{ t('Cancel') }}</button>
     </template>
   </v-f-modal-layout>
 </template>

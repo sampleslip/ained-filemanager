@@ -1,7 +1,7 @@
 <template>
   <v-f-modal-layout>
     <div class="sm:flex sm:items-start">
-      <div class="mx-auto flex-shrink-0 flex items-center justify-center h-12 w-12 rounded-full bg-indigo-200 dark:bg-gray-500 sm:mx-0 sm:h-10 sm:w-10">
+      <div class="mx-auto flex-shrink-0 flex items-center justify-center h-10 w-10 rounded-full bg-indigo-200 dark:bg-gray-500 sm:mx-0 sm:h-10 sm:w-10">
 
         <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 stroke-indigo-500 dark:stroke-indigo-100" fill="none" viewBox="0 0 24 24" stroke="none" stroke-width="1.5">
           <path stroke-linecap="round" stroke-linejoin="round" d="M11 5H6a2 2 0 00-2 2v11a2 2 0 002 2h11a2 2 0 002-2v-5m-1.414-9.414a2 2 0 112.828 2.828L11.828 15H9v-2.828l8.586-8.586z" />
@@ -28,7 +28,7 @@
 
     <template v-slot:buttons>
       <button type="button" @click="rename" class="w-full inline-flex justify-center rounded-md border border-transparent shadow-sm px-4 py-2 bg-indigo-500 dark:bg-gray-700 dark:hover:bg-gray-600/75 text-base font-medium text-white hover:bg-indigo-600 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-red-500 sm:ml-3 sm:w-auto sm:text-sm">{{ t('Rename') }}</button>
-      <button type="button" @click="emitter.emit('vf-modal-close')" class="mt-3 w-full inline-flex justify-center rounded-md border border-gray-300 shadow-sm px-4 py-2 bg-white text-base font-medium text-gray-700 hover:bg-gray-50 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-indigo-500 sm:mt-0 sm:ml-3 sm:w-auto sm:text-sm">{{ t('Cancel') }}</button>
+      <button type="button" @click="emitter.emit('vf-modal-close')" class="w-full inline-flex justify-center rounded-md border border-gray-300 shadow-sm px-4 py-2 bg-white text-base font-medium text-gray-700 hover:bg-gray-50 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-indigo-500 sm:mt-0 sm:ml-3 sm:w-auto sm:text-sm">{{ t('Cancel') }}</button>
     </template>
   </v-f-modal-layout>
 </template>
