@@ -45,16 +45,16 @@
            class="grid grid-cols-1 border hover:bg-neutral-50 dark:hover:bg-gray-700 border-transparent my-0.5 w-full select-none"
            v-for="(item, index) in getItems()" :data-type="item.type" :data-item="JSON.stringify(item)" :data-index="index">
           <div class="grid grid-cols-12 items-center">
-            <div class="flex col-span-7 items-center">
+            <div class="flex col-span-7 items-center  dark:text-white">
               <svg v-if="item.type == 'dir'" xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 text-neutral-500 fill-indigo-200 stroke-indigo-200 dark:fill-slate-500 dark:stroke-slate-500" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="1">
                 <path stroke-linecap="round" stroke-linejoin="round" d="M3 7v10a2 2 0 002 2h14a2 2 0 002-2V9a2 2 0 00-2-2h-6l-2-2H5a2 2 0 00-2 2z" />
               </svg>
               <svg v-else xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 text-neutral-500" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="1">
                 <path stroke-linecap="round" stroke-linejoin="round" d="M7 21h10a2 2 0 002-2V9.414a1 1 0 00-.293-.707l-5.414-5.414A1 1 0 0012.586 3H7a2 2 0 00-2 2v14a2 2 0 002 2z" />
               </svg>
-              <span class="overflow-ellipsis overflow-hidden whitespace-nowrap">{{item.basename }}</span>
+              <span class="overflow-ellipsis overflow-hidden whitespace-nowrap dark:text-white">{{item.basename }}</span>
             </div>
-            <div class="col-span-5 overflow-ellipsis overflow-hidden whitespace-nowrap">{{ item.path }}</div>
+            <div class="col-span-5 overflow-ellipsis overflow-hidden whitespace-nowrap dark:text-white">{{ item.path }}</div>
           </div>
       </div>
 
@@ -78,10 +78,10 @@
               <svg v-else xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 text-neutral-500" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="1">
                 <path stroke-linecap="round" stroke-linejoin="round" d="M7 21h10a2 2 0 002-2V9.414a1 1 0 00-.293-.707l-5.414-5.414A1 1 0 0012.586 3H7a2 2 0 00-2 2v14a2 2 0 002 2z" />
               </svg>
-              <span class="overflow-ellipsis overflow-hidden whitespace-nowrap">{{item.basename }}</span>
+              <span class="overflow-ellipsis overflow-hidden whitespace-nowrap dark:text-white">{{item.basename }}</span>
             </div>
-            <div class="col-span-2 text-center">{{ item.file_size ? filesize(item.file_size) : '' }}</div>
-            <div class="col-span-3 overflow-ellipsis overflow-hidden whitespace-nowrap">{{ datetimestring(item.last_modified) }}</div>
+            <div class="col-span-2 text-center dark:text-white">{{ item.file_size ? filesize(item.file_size) : '' }}</div>
+            <div class="col-span-3 overflow-ellipsis overflow-hidden whitespace-nowrap dark:text-white">{{ datetimestring(item.last_modified) }}</div>
           </div>
       </div>
 
@@ -102,11 +102,11 @@
               <svg v-if="item.type == 'dir'" xmlns="http://www.w3.org/2000/svg" class="h-10 w-10 md:h-12 md:w-12 m-auto fill-indigo-200 stroke-indigo-200 dark:fill-slate-500 dark:stroke-slate-500" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="1">
                 <path stroke-linecap="round" stroke-linejoin="round" d="M3 7v10a2 2 0 002 2h14a2 2 0 002-2V9a2 2 0 00-2-2h-6l-2-2H5a2 2 0 00-2 2z" />
               </svg>
-              <img class="lazy h-10 md:h-12 m-auto" v-else-if="(item.mime_type ?? '').startsWith('image')" :data-src="getImageUrl(adapter.value, item.path)"  :alt="item.basename">
+              <img class="lazy h-10 md:h-12 m-auto dark:text-white" v-else-if="(item.mime_type ?? '').startsWith('image')" :data-src="getImageUrl(adapter.value, item.path)"  :alt="item.basename">
               <svg v-else xmlns="http://www.w3.org/2000/svg" class="h-10 w-10 md:h-12 md:w-12 m-auto text-neutral-500" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="1">
                 <path stroke-linecap="round" stroke-linejoin="round" d="M7 21h10a2 2 0 002-2V9.414a1 1 0 00-.293-.707l-5.414-5.414A1 1 0 0012.586 3H7a2 2 0 00-2 2v14a2 2 0 002 2z" />
               </svg>
-              <div class="absolute md:block top-1/3 w-full text-center text-neutral-500 text-sm" v-if="!(item.mime_type ?? '').startsWith('image') && item.type != 'dir'">{{ ext(item.extension) }}</div>
+              <div class="absolute md:block top-1/3 w-full text-center text-neutral-500 text-sm dark:text-white" v-if="!(item.mime_type ?? '').startsWith('image') && item.type != 'dir'">{{ ext(item.extension) }}</div>
             </div>
             <span class="break-all dark:text-white">{{ title_shorten(item.basename) }}</span>
           </div>
