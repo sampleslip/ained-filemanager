@@ -3490,7 +3490,7 @@ const Xn = { class: "relative flex-auto flex flex-col overflow-x-hidden" }, Zn =
     const b = (S, $) => {
       a.active = !0, Ve(() => {
         let E = $.getBoundingClientRect(), I = S.pageX, T = S.pageY, z = o.value.offsetHeight, R = o.value.offsetWidth;
-        console.log("container: " + E), console.log("left: " + I), console.log("top: " + T), console.log("menuHeight: " + z), console.log("menuWidth: " + R), console.log("if: " + E.right + "-" + S.pageX + "+" + window.scrollX + " < " + R), I = E.right - S.pageX + window.scrollX < R ? I - R : I, T = E.bottom - S.pageY + window.scrollY < z ? T - z : T, a.positions = {
+        console.log("container: " + E.right), console.log("left: " + I), console.log("top: " + T), console.log("menuHeight: " + z), console.log("menuWidth: " + R), console.log("container.right: " + E.right + "- event.pageX" + S.pageX + "+ window.scrollX" + window.scrollX + " < " + R), I = E.right - S.pageX + window.scrollX < R ? I - R : I, T = E.bottom - S.pageY + window.scrollY < z ? T - z : T, a.positions = {
           left: I + "px",
           top: T + "px"
         };
