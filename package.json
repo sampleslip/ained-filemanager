@@ -1,6 +1,6 @@
 {
   "name": "ained-filemanager-2",
-  "version": "0.0.25",
+  "version": "0.0.26",
   "description": "Ained-filemanager is a file manager component for vuejs.",
   "type": "module",
   "files": [
