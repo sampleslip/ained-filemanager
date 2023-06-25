@@ -56,11 +56,11 @@ const props = defineProps({
   },
   maxHeight: {
     type: String,
-    default: '600px'
+    default: '80vh'
   },
   maxFileSize: {
     type: String,
-    default: '10mb'
+    default: '1000mb'
   },
   postData: {
     type: Object,

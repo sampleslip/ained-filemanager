@@ -172,14 +172,14 @@ const showContextMenu = (event, area) => {
   context.active = true;
 
   nextTick(() => {
-    let container = 50;
+    let container = area.getBoundingClientRect();
     let left = event.pageX;
     let top = event.pageY;
     let menuHeight = contextmenu.value.offsetHeight;
     let menuWidth = contextmenu.value.offsetWidth;
 
-    left = (event.pageX + window.scrollX) < menuWidth ? left - menuWidth : left;
-    top = (event.pageY + window.scrollY) < menuHeight ? top - menuHeight : top;
+    left = (container.right - event.pageX + window.scrollX) < menuWidth ? left - menuWidth : left;
+    top = (container.bottom - event.pageY + window.scrollY) < menuHeight ? top - menuHeight : top;
 
     context.positions = {
       left: left + 'px',
