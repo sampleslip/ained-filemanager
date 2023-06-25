@@ -56,7 +56,7 @@ const props = defineProps({
   },
   maxHeight: {
     type: String,
-    default: '80vh'
+    default: '100%'
   },
   maxFileSize: {
     type: String,

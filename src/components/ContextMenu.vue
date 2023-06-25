@@ -178,6 +178,14 @@ const showContextMenu = (event, area) => {
     let menuHeight = contextmenu.value.offsetHeight;
     let menuWidth = contextmenu.value.offsetWidth;
 
+    console.log('container: '+ container)
+    console.log('left: '+ left)
+    console.log('top: '+ top)
+    console.log('menuHeight: '+ menuHeight)
+    console.log('menuWidth: '+ menuWidth)
+
+    console.log('if: '+ container.right + '-' + event.pageX +'+'+ window.scrollX +' < ' + menuWidth)
+
     left = (container.right - event.pageX + window.scrollX) < menuWidth ? left - menuWidth : left;
     top = (container.bottom - event.pageY + window.scrollY) < menuHeight ? top - menuHeight : top;
 

@@ -32,7 +32,7 @@
         @touchstart="handleTouchStart"
         @contextmenu.self.prevent="emitter.emit('vf-contextmenu-show',{event: $event, area: selectorArea, items: getSelectedItems()})"
         :class="fullScreen ? '' : 'resize-y'"
-        class="h-full w-full text-base vf-selector-area min-h-[150px] overflow-auto p-1 z-0"
+        class="h-full w-full text-base vf-selector-area min-h-[80vh] overflow-auto p-1 z-0"
         ref="selectorArea">
 
       <div
