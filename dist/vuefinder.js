@@ -376,7 +376,7 @@ var ls = { exports: {} };
     function u(c, d) {
       for (var e = 0; e < d.length; e++) {
         var g = d[e];
-        g.enumerable = g.enumerable || !1, g.configurable = !0, "value" in g && (g.writable = !0), Object.defineProperty(c, V(g.key), g);
+        g.enumerable = g.enumerable || !1, g.configurable = !0, "value" in g && (g.writable = !0), Object.defineProperty(c, R(g.key), g);
       }
     }
     function m(c, d, e) {
@@ -385,7 +385,7 @@ var ls = { exports: {} };
       }), c;
     }
     function l(c, d, e) {
-      return d = V(d), d in c ? Object.defineProperty(c, d, {
+      return d = R(d), d in c ? Object.defineProperty(c, d, {
         value: e,
         enumerable: !0,
         configurable: !0,
@@ -475,7 +475,7 @@ var ls = { exports: {} };
         throw new TypeError("Derived constructors may only return object or undefined");
       return T(c);
     }
-    function R(c) {
+    function V(c) {
       var d = S();
       return function() {
         var g = f(c), o;
@@ -604,7 +604,7 @@ In order to be iterable, non-array objects must have a [Symbol.iterator]() metho
       }
       return (d === "string" ? String : Number)(c);
     }
-    function V(c) {
+    function R(c) {
       var d = A(c, "string");
       return typeof d == "symbol" ? d : String(d);
     }
@@ -1514,7 +1514,7 @@ In order to be iterable, non-array objects must have a [Symbol.iterator]() metho
        */
     ), Si = /* @__PURE__ */ function(c) {
       v(e, c);
-      var d = R(e);
+      var d = V(e);
       function e(g) {
         var o, h = g.DS;
         return a(this, e), o = d.call(this), l(T(o), "_rects", void 0), l(T(o), "_timeout", void 0), l(T(o), "init", function() {
@@ -1617,7 +1617,7 @@ In order to be iterable, non-array objects must have a [Symbol.iterator]() metho
       }]), e;
     }(/* @__PURE__ */ I(Set)), wi = /* @__PURE__ */ function(c) {
       v(e, c);
-      var d = R(e);
+      var d = V(e);
       function e(g) {
         var o, h = g.DS;
         return a(this, e), o = d.call(this), l(T(o), "clear", function() {
@@ -2896,19 +2896,19 @@ const Xn = { class: "relative flex-auto flex flex-col overflow-x-hidden" }, Zn =
           path: t.data.dirname,
           filter: A
         },
-        onSuccess: (V) => {
-          V.files.length || s.emit("vf-toast-push", { label: S("No search result found.") });
+        onSuccess: (R) => {
+          R.files.length || s.emit("vf-toast-push", { label: S("No search result found.") });
         }
       }) : s.emit("vf-fetch", { params: { q: "index", adapter: t.data.adapter, path: t.data.dirname } });
     });
     let H = null;
-    const R = () => {
+    const V = () => {
       H && clearTimeout(H);
     }, j = L(!0), z = (A) => {
       A.touches.length > 1 && (j.value ? (b.value.stop(), s.emit("vf-toast-push", { label: S("Drag&Drop: off") })) : (b.value.start(), s.emit("vf-toast-push", { label: S("Drag&Drop: on") }), s.emit("vf-explorer-update")), j.value = !j.value);
     }, X = (A) => {
       H = setTimeout(() => {
-        const V = new MouseEvent("contextmenu", {
+        const R = new MouseEvent("contextmenu", {
           bubbles: !0,
           cancelable: !1,
           view: window,
@@ -2917,32 +2917,32 @@ const Xn = { class: "relative flex-auto flex flex-col overflow-x-hidden" }, Zn =
           clientX: A.target.getBoundingClientRect().x,
           clientY: A.target.getBoundingClientRect().y
         });
-        A.target.dispatchEvent(V);
+        A.target.dispatchEvent(R);
       }, 500);
     }, k = (A) => {
       A.type == "dir" ? (s.emit("vf-search-exit"), s.emit("vf-fetch", { params: { q: "index", adapter: t.data.adapter, path: A.path } })) : s.emit("vf-modal-show", { type: "preview", adapter: t.data.adapter, item: A });
     }, N = Le({ active: !1, column: "", order: "" }), G = (A = !0) => {
-      let V = [...t.data.files], O = N.column, tt = N.order == "asc" ? 1 : -1;
+      let R = [...t.data.files], O = N.column, tt = N.order == "asc" ? 1 : -1;
       if (!A)
-        return V;
+        return R;
       const U = (wt, bt) => typeof wt == "string" && typeof bt == "string" ? wt.toLowerCase().localeCompare(bt.toLowerCase()) : wt < bt ? -1 : wt > bt ? 1 : 0;
-      return N.active && (V = V.slice().sort((wt, bt) => U(wt[O], bt[O]) * tt)), V;
+      return N.active && (R = R.slice().sort((wt, bt) => U(wt[O], bt[O]) * tt)), R;
     }, it = (A) => {
       N.active && N.column == A ? (N.active = N.order == "asc", N.column = A, N.order = "desc") : (N.active = !0, N.column = A, N.order = "asc");
-    }, et = () => b.value.getSelection().map((A) => JSON.parse(A.dataset.item)), dt = (A, V) => {
+    }, et = () => b.value.getSelection().map((A) => JSON.parse(A.dataset.item)), dt = (A, R) => {
       if (A.altKey || A.ctrlKey || A.metaKey)
         return A.preventDefault(), !1;
       A.dataTransfer.setDragImage(v.value, 0, 15), A.dataTransfer.effectAllowed = "all", A.dataTransfer.dropEffect = "copy", A.dataTransfer.setData("items", JSON.stringify(et()));
-    }, vt = (A, V) => {
+    }, vt = (A, R) => {
       A.preventDefault();
       let O = JSON.parse(A.dataTransfer.getData("items"));
       if (O.find((tt) => tt.storage != a.value)) {
         alert("Moving items between different storages is not supported yet.");
         return;
       }
-      s.emit("vf-modal-show", { type: "move", items: { from: O, to: V } });
-    }, pt = (A, V) => {
-      A.preventDefault(), !V || V.type !== "dir" || b.value.getSelection().find((O) => O == A.currentTarget) ? (A.dataTransfer.dropEffect = "none", A.dataTransfer.effectAllowed = "none") : A.dataTransfer.dropEffect = "copy";
+      s.emit("vf-modal-show", { type: "move", items: { from: O, to: R } });
+    }, pt = (A, R) => {
+      A.preventDefault(), !R || R.type !== "dir" || b.value.getSelection().find((O) => O == A.currentTarget) ? (A.dataTransfer.dropEffect = "none", A.dataTransfer.effectAllowed = "none") : A.dataTransfer.dropEffect = "copy";
     };
     return Et(() => {
       b.value = new Eo({
@@ -2952,8 +2952,8 @@ const Xn = { class: "relative flex-auto flex flex-col overflow-x-hidden" }, Zn =
         selectorClass: "vf-explorer-selector"
       }), s.on("vf-explorer-update", () => Ve(() => {
         b.value.clearSelection(), b.value.setSelectables(document.getElementsByClassName("vf-item-" + $));
-      })), b.value.subscribe("predragstart", ({ event: A, isDragging: V }) => {
-        if (V)
+      })), b.value.subscribe("predragstart", ({ event: A, isDragging: R }) => {
+        if (R)
           f.value = b.value.getSelection().length, b.value.break();
         else {
           const O = A.target.offsetWidth - A.offsetX, tt = A.target.offsetHeight - A.offsetY;
@@ -2961,17 +2961,17 @@ const Xn = { class: "relative flex-auto flex flex-col overflow-x-hidden" }, Zn =
         }
       }), b.value.subscribe("predragmove", ({ isDragging: A }) => {
         A && b.value.break();
-      }), b.value.subscribe("callback", ({ items: A, event: V, isDragging: O }) => {
+      }), b.value.subscribe("callback", ({ items: A, event: R, isDragging: O }) => {
         s.emit("vf-nodes-selected", et()), f.value = b.value.getSelection().length;
       });
     }), Ai(() => {
       b.value.Area.reset(), b.value.SelectorArea.updatePos(), I.update();
     }), Et(() => {
       Re(() => t.view, () => s.emit("vf-explorer-update"));
-    }), (A, V) => (w(), C("div", Xn, [
+    }), (A, R) => (w(), C("div", Xn, [
       r.view == "list" || T.value.length ? (w(), C("div", Zn, [
         p("div", {
-          onClick: V[0] || (V[0] = (O) => it("basename")),
+          onClick: R[0] || (R[0] = (O) => it("basename")),
           class: "col-span-7 py-1 leading-6 hover:bg-neutral-100 bg-neutral-50 dark:bg-gray-800 dark:hover:bg-gray-700/10 flex items-center pl-1 dark:text-white"
         }, [
           st(E(x(S)("Name")) + " ", 1),
@@ -2983,7 +2983,7 @@ const Xn = { class: "relative flex-auto flex flex-col overflow-x-hidden" }, Zn =
         ]),
         T.value.length ? Z("", !0) : (w(), C("div", {
           key: 0,
-          onClick: V[1] || (V[1] = (O) => it("file_size")),
+          onClick: R[1] || (R[1] = (O) => it("file_size")),
           class: "col-span-2 py-1 leading-6 hover:bg-neutral-100 bg-neutral-50 dark:bg-gray-800 dark:hover:bg-gray-700/10 flex items-center justify-center border-l border-r dark:border-gray-700 dark:text-white"
         }, [
           st(E(x(S)("Size")) + " ", 1),
@@ -2995,7 +2995,7 @@ const Xn = { class: "relative flex-auto flex flex-col overflow-x-hidden" }, Zn =
         ])),
         T.value.length ? Z("", !0) : (w(), C("div", {
           key: 1,
-          onClick: V[2] || (V[2] = (O) => it("last_modified")),
+          onClick: R[2] || (R[2] = (O) => it("last_modified")),
           class: "col-span-3 py-1 leading-6 hover:bg-neutral-100 bg-neutral-50 dark:bg-gray-800 dark:hover:bg-gray-700/10 flex items-center justify-center dark:text-white"
         }, [
           st(E(x(S)("Date")) + " ", 1),
@@ -3007,7 +3007,7 @@ const Xn = { class: "relative flex-auto flex flex-col overflow-x-hidden" }, Zn =
         ])),
         T.value.length ? (w(), C("div", {
           key: 2,
-          onClick: V[3] || (V[3] = (O) => it("path")),
+          onClick: R[3] || (R[3] = (O) => it("path")),
           class: "col-span-5 py-1 leading-6 hover:bg-neutral-100 bg-neutral-50 dark:bg-gray-800 dark:hover:bg-gray-700/10 flex items-center justify-center border-l dark:border-gray-700 dark:text-white"
         }, [
           st(E(x(S)("Filepath")) + " ", 1),
@@ -3030,15 +3030,15 @@ const Xn = { class: "relative flex-auto flex flex-col overflow-x-hidden" }, Zn =
       ]),
       p("div", {
         onTouchstart: z,
-        onContextmenu: V[10] || (V[10] = Wt((O) => x(s).emit("vf-contextmenu-show", { event: O, area: l.value, items: et() }), ["self", "prevent"])),
+        onContextmenu: R[10] || (R[10] = Wt((O) => x(s).emit("vf-contextmenu-show", { event: O, area: l.value, items: et() }), ["self", "prevent"])),
         class: ct([M.value ? "" : "resize-y", "h-full w-full text-base vf-selector-area min-h-[80vh] overflow-auto p-1 z-0"]),
         ref_key: "selectorArea",
         ref: l
       }, [
         T.value.length ? (w(!0), C(lt, { key: 0 }, St(G(), (O, tt) => (w(), C("div", {
           onDblclick: (U) => k(O),
-          onTouchstart: V[4] || (V[4] = (U) => X(U)),
-          onTouchend: V[5] || (V[5] = (U) => R()),
+          onTouchstart: R[4] || (R[4] = (U) => X(U)),
+          onTouchend: R[5] || (R[5] = (U) => V()),
           onContextmenu: Wt((U) => x(s).emit("vf-contextmenu-show", { event: U, area: l.value, items: et(), target: O }), ["prevent"]),
           class: ct(["vf-item-" + x($), "grid grid-cols-1 border hover:bg-neutral-50 dark:hover:bg-gray-700 border-transparent my-0.5 w-full select-none"]),
           "data-type": O.type,
@@ -3056,8 +3056,8 @@ const Xn = { class: "relative flex-auto flex flex-col overflow-x-hidden" }, Zn =
         r.view == "list" && !T.value.length ? (w(!0), C(lt, { key: 1 }, St(G(), (O, tt) => (w(), C("div", {
           draggable: "true",
           onDblclick: (U) => k(O),
-          onTouchstart: V[6] || (V[6] = (U) => X(U)),
-          onTouchend: V[7] || (V[7] = (U) => R()),
+          onTouchstart: R[6] || (R[6] = (U) => X(U)),
+          onTouchend: R[7] || (R[7] = (U) => V()),
           onContextmenu: Wt((U) => x(s).emit("vf-contextmenu-show", { event: U, area: l.value, items: et(), target: O }), ["prevent"]),
           onDragstart: (U) => dt(U),
           onDragover: (U) => pt(U, O),
@@ -3079,8 +3079,8 @@ const Xn = { class: "relative flex-auto flex flex-col overflow-x-hidden" }, Zn =
         r.view == "grid" && !T.value.length ? (w(!0), C(lt, { key: 2 }, St(G(!1), (O, tt) => (w(), C("div", {
           draggable: "true",
           onDblclick: (U) => k(O),
-          onTouchstart: V[8] || (V[8] = (U) => X(U)),
-          onTouchend: V[9] || (V[9] = (U) => R()),
+          onTouchstart: R[8] || (R[8] = (U) => X(U)),
+          onTouchend: R[9] || (R[9] = (U) => V()),
           onContextmenu: Wt((U) => x(s).emit("vf-contextmenu-show", { event: U, area: l.value, items: et(), target: O }), ["prevent"]),
           onDragstart: (U) => dt(U),
           onDragover: (U) => pt(U, O),
@@ -3252,12 +3252,12 @@ const Xn = { class: "relative flex-auto flex flex-col overflow-x-hidden" }, Zn =
     P("storage");
     const i = P("adapter"), n = L(null), a = L([]), u = L(!1), m = L(null), { t: l } = P("i18n"), v = P("loadingState");
     s.on("vf-explorer-update", () => {
-      let R = [], j = [];
+      let V = [], j = [];
       n.value = t.data.dirname ?? i.value + "://", n.value.length == 0 && (a.value = []), n.value.replace(i.value + "://", "").split("/").forEach(function(z) {
-        R.push(z), R.join("/") != "" && j.push({
+        V.push(z), V.join("/") != "" && j.push({
           basename: z,
           name: z,
-          path: i.value + "://" + R.join("/"),
+          path: i.value + "://" + V.join("/"),
           type: "dir"
         });
       }), j.length > 4 && (j = j.slice(-5), j[0].name = ".."), a.value = j;
@@ -3271,12 +3271,12 @@ const Xn = { class: "relative flex-auto flex flex-col overflow-x-hidden" }, Zn =
     const b = () => {
       u.value = !0, Ve(() => m.value.focus());
     }, S = Wa("", 400), $ = () => v.value;
-    Re(S, (R) => {
-      s.emit("vf-toast-clear"), s.emit("vf-search-query", { newQuery: R });
+    Re(S, (V) => {
+      s.emit("vf-toast-clear"), s.emit("vf-search-query", { newQuery: V });
     });
-    const M = () => a.value.length && !u.value, I = (R) => {
-      R.preventDefault();
-      let j = JSON.parse(R.dataTransfer.getData("items"));
+    const M = () => a.value.length && !u.value, I = (V) => {
+      V.preventDefault();
+      let j = JSON.parse(V.dataTransfer.getData("items"));
       if (j.find((z) => z.storage != i.value)) {
         alert("Moving items between different storages is not supported yet.");
         return;
@@ -3285,12 +3285,12 @@ const Xn = { class: "relative flex-auto flex flex-col overflow-x-hidden" }, Zn =
         type: "move",
         items: { from: j, to: a.value[a.value.length - 2] ?? { path: i.value + "://" } }
       });
-    }, T = (R) => {
-      R.preventDefault(), M() ? R.dataTransfer.dropEffect = "copy" : (R.dataTransfer.dropEffect = "none", R.dataTransfer.effectAllowed = "none");
+    }, T = (V) => {
+      V.preventDefault(), M() ? V.dataTransfer.dropEffect = "copy" : (V.dataTransfer.dropEffect = "none", V.dataTransfer.effectAllowed = "none");
     }, H = () => {
       S.value == "" && f();
     };
-    return (R, j) => (w(), C("div", Xa, [
+    return (V, j) => (w(), C("div", Xa, [
       p("span", {
         "aria-label": x(l)("Go up a directory"),
         "data-microtip-position": "bottom-right",
@@ -3489,8 +3489,8 @@ const Xn = { class: "relative flex-auto flex flex-col overflow-x-hidden" }, Zn =
     });
     const b = (S, $) => {
       a.active = !0, Ve(() => {
-        let M = $.getBoundingClientRect(), I = S.pageX, T = S.pageY, H = i.value.offsetHeight, R = i.value.offsetWidth;
-        I = M.right - S.pageX + window.scrollX < R ? I - R : R - 50, T = M.bottom - S.pageY + window.scrollY < H ? T - H : T, a.positions = {
+        let M = $.getBoundingClientRect(), I = S.pageX, T = S.pageY, H = i.value.offsetHeight, V = i.value.offsetWidth;
+        I = M.right - S.pageX + window.scrollX < V ? I - V : I, T = M.bottom - S.pageY + window.scrollY < H ? T - H : T, a.positions = {
           left: I + "px",
           top: T + "px"
         };
@@ -3608,11 +3608,11 @@ const Ml = { class: "vuefinder" }, Tl = /* @__PURE__ */ p("iframe", {
     let T;
     return s.on("vf-fetch-abort", () => {
       T.abort(), S.value = !1;
-    }), s.on("vf-fetch", ({ params: H, onSuccess: R = null, onError: j = null }) => {
+    }), s.on("vf-fetch", ({ params: H, onSuccess: V = null, onError: j = null }) => {
       ["index", "search"].includes(H.q) && (T && T.abort(), S.value = !0), T = new AbortController();
       const z = T.signal;
       Pe(m.value, { params: H, signal: z }).then((X) => {
-        a.value = X.adapter, ["index", "search"].includes(H.q) && (S.value = !1), s.emit("vf-modal-close"), I(X), R(X);
+        a.value = X.adapter, ["index", "search"].includes(H.q) && (S.value = !1), s.emit("vf-modal-close"), I(X), V(X);
       }).catch((X) => {
         j && j(X);
       }).finally(() => {
@@ -3621,15 +3621,15 @@ const Ml = { class: "vuefinder" }, Tl = /* @__PURE__ */ p("iframe", {
       document.getElementById("download_frame").src = H, s.emit("vf-modal-close");
     }), Et(() => {
       s.emit("vf-fetch", { params: { q: "index", adapter: a.value } });
-    }), (H, R) => (w(), C("div", Ml, [
+    }), (H, V) => (w(), C("div", Ml, [
       p("div", {
         class: ct(b.value ? "dark" : "")
       }, [
         p("div", {
           class: ct([$.value ? "fixed w-screen inset-0 z-20" : "relative rounded-md", "flex flex-col bg-white dark:bg-gray-800 text-gray-700 dark:text-neutral-400 min-w-min select-none"]),
           style: as($.value ? "" : "max-height: " + r.maxHeight),
-          onMousedown: R[0] || (R[0] = (j) => x(s).emit("vf-contextmenu-hide")),
-          onTouchstart: R[1] || (R[1] = (j) => x(s).emit("vf-contextmenu-hide"))
+          onMousedown: V[0] || (V[0] = (j) => x(s).emit("vf-contextmenu-hide")),
+          onTouchstart: V[1] || (V[1] = (j) => x(s).emit("vf-contextmenu-hide"))
         }, [
           Dt(xo, { data: v }, null, 8, ["data"]),
           Dt(Sl, { data: v }, null, 8, ["data"]),
@@ -4597,7 +4597,7 @@ function cd(r) {
   };
 }
 function dd(r, t, s, i) {
-  var n = t.aspectRatio, a = t.naturalWidth, u = t.naturalHeight, m = t.rotate, l = m === void 0 ? 0 : m, v = t.scaleX, f = v === void 0 ? 1 : v, b = t.scaleY, S = b === void 0 ? 1 : b, $ = s.aspectRatio, M = s.naturalWidth, I = s.naturalHeight, T = i.fillColor, H = T === void 0 ? "transparent" : T, R = i.imageSmoothingEnabled, j = R === void 0 ? !0 : R, z = i.imageSmoothingQuality, X = z === void 0 ? "low" : z, k = i.maxWidth, N = k === void 0 ? 1 / 0 : k, G = i.maxHeight, it = G === void 0 ? 1 / 0 : G, et = i.minWidth, dt = et === void 0 ? 0 : et, vt = i.minHeight, pt = vt === void 0 ? 0 : vt, gt = document.createElement("canvas"), A = gt.getContext("2d"), V = Vt({
+  var n = t.aspectRatio, a = t.naturalWidth, u = t.naturalHeight, m = t.rotate, l = m === void 0 ? 0 : m, v = t.scaleX, f = v === void 0 ? 1 : v, b = t.scaleY, S = b === void 0 ? 1 : b, $ = s.aspectRatio, M = s.naturalWidth, I = s.naturalHeight, T = i.fillColor, H = T === void 0 ? "transparent" : T, V = i.imageSmoothingEnabled, j = V === void 0 ? !0 : V, z = i.imageSmoothingQuality, X = z === void 0 ? "low" : z, k = i.maxWidth, N = k === void 0 ? 1 / 0 : k, G = i.maxHeight, it = G === void 0 ? 1 / 0 : G, et = i.minWidth, dt = et === void 0 ? 0 : et, vt = i.minHeight, pt = vt === void 0 ? 0 : vt, gt = document.createElement("canvas"), A = gt.getContext("2d"), R = Vt({
     aspectRatio: $,
     width: N,
     height: it
@@ -4605,7 +4605,7 @@ function dd(r, t, s, i) {
     aspectRatio: $,
     width: dt,
     height: pt
-  }, "cover"), tt = Math.min(V.width, Math.max(O.width, M)), U = Math.min(V.height, Math.max(O.height, I)), wt = Vt({
+  }, "cover"), tt = Math.min(R.width, Math.max(O.width, M)), U = Math.min(R.height, Math.max(O.height, I)), wt = Vt({
     aspectRatio: n,
     width: N,
     height: it
@@ -4935,8 +4935,8 @@ var vd = {
   }
 }, wd = {
   change: function(t) {
-    var s = this.options, i = this.canvasData, n = this.containerData, a = this.cropBoxData, u = this.pointers, m = this.action, l = s.aspectRatio, v = a.left, f = a.top, b = a.width, S = a.height, $ = v + b, M = f + S, I = 0, T = 0, H = n.width, R = n.height, j = !0, z;
-    !l && t.shiftKey && (l = b && S ? b / S : 1), this.limited && (I = a.minLeft, T = a.minTop, H = I + Math.min(n.width, i.width, i.left + i.width), R = T + Math.min(n.height, i.height, i.top + i.height));
+    var s = this.options, i = this.canvasData, n = this.containerData, a = this.cropBoxData, u = this.pointers, m = this.action, l = s.aspectRatio, v = a.left, f = a.top, b = a.width, S = a.height, $ = v + b, M = f + S, I = 0, T = 0, H = n.width, V = n.height, j = !0, z;
+    !l && t.shiftKey && (l = b && S ? b / S : 1), this.limited && (I = a.minLeft, T = a.minTop, H = I + Math.min(n.width, i.width, i.left + i.width), V = T + Math.min(n.height, i.height, i.top + i.height));
     var X = u[Object.keys(u)[0]], k = {
       x: X.endX - X.startX,
       y: X.endY - X.startY
@@ -4952,7 +4952,7 @@ var vd = {
           f + k.y < T && (k.y = T - f);
           break;
         case Jt:
-          M + k.y > R && (k.y = R - M);
+          M + k.y > V && (k.y = V - M);
           break;
       }
     };
@@ -4961,7 +4961,7 @@ var vd = {
         v += k.x, f += k.y;
         break;
       case Kt:
-        if (k.x >= 0 && ($ >= H || l && (f <= T || M >= R))) {
+        if (k.x >= 0 && ($ >= H || l && (f <= T || M >= V))) {
           j = !1;
           break;
         }
@@ -4975,14 +4975,14 @@ var vd = {
         N(jt), S -= k.y, f += k.y, S < 0 && (m = Jt, S = -S, f -= S), l && (b = S * l, v += (a.width - b) / 2);
         break;
       case Yt:
-        if (k.x <= 0 && (v <= I || l && (f <= T || M >= R))) {
+        if (k.x <= 0 && (v <= I || l && (f <= T || M >= V))) {
           j = !1;
           break;
         }
         N(Yt), b -= k.x, v += k.x, b < 0 && (m = Kt, b = -b, v -= b), l && (S = b / l, f += (a.height - S) / 2);
         break;
       case Jt:
-        if (k.y >= 0 && (M >= R || l && (v <= I || $ >= H))) {
+        if (k.y >= 0 && (M >= V || l && (v <= I || $ >= H))) {
           j = !1;
           break;
         }
@@ -5012,24 +5012,24 @@ var vd = {
         break;
       case ge:
         if (l) {
-          if (k.x <= 0 && (v <= I || M >= R)) {
+          if (k.x <= 0 && (v <= I || M >= V)) {
             j = !1;
             break;
           }
           N(Yt), b -= k.x, v += k.x, S = b / l;
         } else
-          N(Jt), N(Yt), k.x <= 0 ? v > I ? (b -= k.x, v += k.x) : k.y >= 0 && M >= R && (j = !1) : (b -= k.x, v += k.x), k.y >= 0 ? M < R && (S += k.y) : S += k.y;
+          N(Jt), N(Yt), k.x <= 0 ? v > I ? (b -= k.x, v += k.x) : k.y >= 0 && M >= V && (j = !1) : (b -= k.x, v += k.x), k.y >= 0 ? M < V && (S += k.y) : S += k.y;
         b < 0 && S < 0 ? (m = he, S = -S, b = -b, f -= S, v -= b) : b < 0 ? (m = pe, b = -b, v -= b) : S < 0 && (m = fe, S = -S, f -= S);
         break;
       case pe:
         if (l) {
-          if (k.x >= 0 && ($ >= H || M >= R)) {
+          if (k.x >= 0 && ($ >= H || M >= V)) {
             j = !1;
             break;
           }
           N(Kt), b += k.x, S = b / l;
         } else
-          N(Jt), N(Kt), k.x >= 0 ? $ < H ? b += k.x : k.y >= 0 && M >= R && (j = !1) : b += k.x, k.y >= 0 ? M < R && (S += k.y) : S += k.y;
+          N(Jt), N(Kt), k.x >= 0 ? $ < H ? b += k.x : k.y >= 0 && M >= V && (j = !1) : b += k.x, k.y >= 0 ? M < V && (S += k.y) : S += k.y;
         b < 0 && S < 0 ? (m = fe, S = -S, b = -b, f -= S, v -= b) : b < 0 ? (m = ge, b = -b, v -= b) : S < 0 && (m = he, S = -S, f -= S);
         break;
       case Hs:
@@ -5329,14 +5329,14 @@ var vd = {
     M = Math.min(b.width, Math.max(S.width, M)), I = Math.min(b.height, Math.max(S.height, I));
     var T = document.createElement("canvas"), H = T.getContext("2d");
     T.width = ee(M), T.height = ee(I), H.fillStyle = t.fillColor || "transparent", H.fillRect(0, 0, M, I);
-    var R = t.imageSmoothingEnabled, j = R === void 0 ? !0 : R, z = t.imageSmoothingQuality;
+    var V = t.imageSmoothingEnabled, j = V === void 0 ? !0 : V, z = t.imageSmoothingQuality;
     H.imageSmoothingEnabled = j, z && (H.imageSmoothingQuality = z);
     var X = i.width, k = i.height, N = a, G = u, it, et, dt, vt, pt, gt;
     N <= -m || N > X ? (N = 0, it = 0, dt = 0, pt = 0) : N <= 0 ? (dt = -N, N = 0, it = Math.min(X, m + N), pt = it) : N <= X && (dt = 0, it = Math.min(m, X - N), pt = it), it <= 0 || G <= -l || G > k ? (G = 0, et = 0, vt = 0, gt = 0) : G <= 0 ? (vt = -G, G = 0, et = Math.min(k, l + G), gt = et) : G <= k && (vt = 0, et = Math.min(l, k - G), gt = et);
     var A = [N, G, it, et];
     if (pt > 0 && gt > 0) {
-      var V = M / m;
-      A.push(dt * V, vt * V, pt * V, gt * V);
+      var R = M / m;
+      A.push(dt * R, vt * R, pt * R, gt * R);
     }
     return H.drawImage.apply(H, [i].concat(Bs(A.map(function(O) {
       return Math.floor(ee(O));
