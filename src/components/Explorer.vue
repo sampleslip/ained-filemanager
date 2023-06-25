@@ -1,5 +1,5 @@
 <template>
-  <div class="relative flex-auto flex flex-col overflow-hidden">
+  <div class="relative flex-auto flex flex-col overflow-x-hidden">
     <div v-if="view=='list' || searchQuery.length" class="grid grid-cols-12 border-b border-neutral-300 border-gray-200 dark:border-gray-700 text-base select-none">
         <div @click="sortBy('basename')" class="col-span-7 py-1 leading-6 hover:bg-neutral-100 bg-neutral-50 dark:bg-gray-800 dark:hover:bg-gray-700/10 flex items-center pl-1 dark:text-white">
           {{ t('Name') }}

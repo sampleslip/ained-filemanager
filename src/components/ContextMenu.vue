@@ -1,5 +1,5 @@
 <template>
-  <ul class="z-30 absolute text-base dark:bg-gray-800 text-gray-700 dark:text-gray-200 py-2 rounded bg-white shadow-lg select-none" ref="contextmenu" v-if="context.active" :style="context.positions">
+  <ul class="z-30 absolute text-base dark:bg-gray-600 text-gray-700 dark:text-gray-200 py-2 rounded bg-white shadow-lg select-none" ref="contextmenu" v-if="context.active" :style="context.positions">
     <li class="px-2 py-1.5 cursor-pointer bg-transparent hover:bg-gray-100 hover:text-indigo-500 dark:hover:bg-gray-700"
         v-for="(item) in context.items" :key="item.title" @click="run(item)">
       <span class="px-1"></span>
@@ -172,14 +172,14 @@ const showContextMenu = (event, area) => {
   context.active = true;
 
   nextTick(() => {
-    let container = area.getBoundingClientRect();
+    let container = 50;
     let left = event.pageX;
     let top = event.pageY;
     let menuHeight = contextmenu.value.offsetHeight;
     let menuWidth = contextmenu.value.offsetWidth;
 
-    left = (container.right - event.pageX + window.scrollX) < menuWidth ? left - menuWidth : left;
-    top = (container.bottom - event.pageY + window.scrollY) < menuHeight ? top - menuHeight : top;
+    left = (event.pageX + window.scrollX) < menuWidth ? left - menuWidth : left;
+    top = (event.pageY + window.scrollY) < menuHeight ? top - menuHeight : top;
 
     context.positions = {
       left: left + 'px',
